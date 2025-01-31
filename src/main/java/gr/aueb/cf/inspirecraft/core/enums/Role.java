@@ -1,4 +1,4 @@
-package gr.aueb.cf.inspirecraft.core;
+package gr.aueb.cf.inspirecraft.core.enums;
 
 public enum Role {
     CREATOR,

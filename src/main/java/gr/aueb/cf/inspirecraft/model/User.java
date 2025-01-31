@@ -1,6 +1,6 @@
 package gr.aueb.cf.inspirecraft.model;
 
-import gr.aueb.cf.inspirecraft.core.Role;
+import gr.aueb.cf.inspirecraft.core.enums.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

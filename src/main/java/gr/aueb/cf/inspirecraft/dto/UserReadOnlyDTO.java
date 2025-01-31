@@ -1,6 +1,6 @@
 package gr.aueb.cf.inspirecraft.dto;
 
-import gr.aueb.cf.inspirecraft.core.Role;
+import gr.aueb.cf.inspirecraft.core.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

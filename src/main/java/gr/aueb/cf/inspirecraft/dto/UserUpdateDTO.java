@@ -1,8 +1,7 @@
 package gr.aueb.cf.inspirecraft.dto;
 
-import gr.aueb.cf.inspirecraft.core.Role;
+import gr.aueb.cf.inspirecraft.core.enums.Role;
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
