@@ -1,9 +1,6 @@
 package gr.aueb.cf.inspirecraft.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,6 +16,6 @@ import java.util.List;
 @Table(name = "creators")
 public class Creator extends User{
 
-    @OneToMany(mappedBy = "creator")
+    @OneToMany(mappedBy = "creator", cascade = CascadeType.ALL)
     private List<Product> products;
 }

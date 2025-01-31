@@ -1,10 +1,7 @@
 package gr.aueb.cf.inspirecraft.model;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.OneToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,7 +17,12 @@ import java.util.List;
 @Table(name = "members")
 public class Member extends User{
 
-//    @OneToOne
-//    private Favorites favorites;
+    @OneToOne(mappedBy = "member", cascade = CascadeType.ALL)
+    private Favorites favorites;
+
+    @ManyToMany
+    @JoinTable(name = "member_favorites", joinColumns = @JoinColumn(name = "member_id"), inverseJoinColumns =
+        @JoinColumn(name = "product_id"))
+    private List<Product> favoriteProducts;
 
 }

@@ -27,8 +27,8 @@ public class Product extends AbstractEntity{
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "creator_id")
     private Creator creator;
-//
-//    @ManyToMany(fetch = FetchType.LAZY)
-//    private List<Favorites> favorites;
+
+    @ManyToMany(mappedBy = "favoriteProducts")
+    private List<Member> membersLiked;
 
 }
