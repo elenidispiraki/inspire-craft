@@ -1,5 +1,7 @@
 package gr.aueb.cf.inspirecraft.service;
 
+import gr.aueb.cf.inspirecraft.dto.MemberInsertDTO;
+import gr.aueb.cf.inspirecraft.dto.MemberUpdateDTO;
 import gr.aueb.cf.inspirecraft.model.Member;
 
 import java.util.List;

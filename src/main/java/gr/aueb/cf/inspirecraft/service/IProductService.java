@@ -1,5 +1,7 @@
 package gr.aueb.cf.inspirecraft.service;
 
+import gr.aueb.cf.inspirecraft.dto.ProductInsertDTO;
+import gr.aueb.cf.inspirecraft.dto.ProductUpdateDTO;
 import gr.aueb.cf.inspirecraft.model.Product;
 
 import java.util.List;

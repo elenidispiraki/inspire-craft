@@ -22,6 +22,7 @@ public class Product extends AbstractEntity{
 
     @Column(nullable = false)
     private String name;
+    @Column(nullable = false)
     private String description;
 
     @ManyToOne(fetch = FetchType.LAZY)
