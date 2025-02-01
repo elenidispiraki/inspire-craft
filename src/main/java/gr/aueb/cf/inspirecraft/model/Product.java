@@ -29,7 +29,7 @@ public class Product extends AbstractEntity{
     @JoinColumn(name = "creator_id")
     private Creator creator;
 
-    @ManyToMany(mappedBy = "favoriteProducts")
-    private List<Member> membersLiked;
+//    @ManyToMany(mappedBy = "favoriteProducts")
+//    private List<Member> membersLiked;
 
 }

@@ -9,8 +9,8 @@ import java.util.List;
 
 public interface CreatorRepository extends JpaRepository<Creator, Long>, JpaSpecificationExecutor<Creator> {
 
-    List<Creator> findByFirstname(String firstname);
-    List<Creator> findByLastname(String lastname);
-    List<Creator> findByFirstnameAndLastname(String firstname, String lastname);
+    List<Creator> findByUserFirstname(String firstname);
+    List<Creator> findByUserLastname(String lastname);
+    List<Creator> findByUserFirstnameAndUserLastname(String firstname, String lastname);
 
 }

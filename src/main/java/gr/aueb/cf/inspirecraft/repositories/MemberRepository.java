@@ -11,9 +11,9 @@ import java.util.Optional;
 public interface MemberRepository extends JpaRepository<Member, Long>, JpaSpecificationExecutor<Member> {
 
     @Override
-    Optional<Member> findById(Long aLong);
-    List<Member> findByFirstname(String firstname);
-    List<Member> findByLastname(String lastname);
-    List<Member> findByFirstnameAndLastname(String firstname, String lastname);
+    Optional<Member> findById(Long Long);
+    List<Member> findByUserFirstname(String firstname);
+    List<Member> findByUserLastname(String lastname);
+    List<Member> findByUserFirstnameAndUserLastname(String firstname, String lastname);
 
 }
