@@ -50,7 +50,6 @@ public class UserServiceImpl implements IUserService {
         return mapper.mapToUserReadOnlyDTO(savedUser);
     }
 
-
     @Override
     @Transactional(rollbackOn = Exception.class)
     public void deleteUser(Long id) throws AppObjectNotFoundException {
