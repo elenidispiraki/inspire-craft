@@ -20,8 +20,13 @@ public class Favorites extends AbstractEntity{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "member_id")
     private Member member;
+
+    @ManyToMany
+    @JoinTable(name = "favorites_products", joinColumns = @JoinColumn(name = "favorites_id"), inverseJoinColumns =
+    @JoinColumn(name = "product_id"))
+    private List<Product> favoriteProducts;
 
 }

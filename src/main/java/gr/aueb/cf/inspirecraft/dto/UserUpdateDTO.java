@@ -26,4 +26,5 @@ public class UserUpdateDTO {
     private String lastname;
     private LocalDate dateOfBirth;
     private Role role;
+
 }

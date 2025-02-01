@@ -1,8 +1,13 @@
 package gr.aueb.cf.inspirecraft.service;
 
+
+import gr.aueb.cf.inspirecraft.core.exceptions.AppObjectAlreadyExistsException;
+import gr.aueb.cf.inspirecraft.core.exceptions.AppObjectInvalidArgumentException;
+import gr.aueb.cf.inspirecraft.core.exceptions.AppObjectNotFoundException;
 import gr.aueb.cf.inspirecraft.dto.UserInsertDTO;
 import gr.aueb.cf.inspirecraft.dto.UserUpdateDTO;
 import gr.aueb.cf.inspirecraft.model.User;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,18 +17,20 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 public class UserServiceImpl implements IUserService {
+
+
     @Override
-    public User saveUser(UserInsertDTO userInsertDTO) {
+    public User saveUser(UserInsertDTO userInsertDTO) throws AppObjectAlreadyExistsException, AppObjectInvalidArgumentException {
         return null;
     }
 
     @Override
-    public User updateUser(UserUpdateDTO userUpdateDTO) {
+    public User updateUser(UserUpdateDTO userUpdateDTO) throws AppObjectInvalidArgumentException, AppObjectNotFoundException {
         return null;
     }
 
     @Override
-    public void deleteUser(Long id) {
+    public void deleteUser(Long id) throws AppObjectNotFoundException {
 
     }
 

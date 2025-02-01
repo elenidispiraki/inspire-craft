@@ -1,13 +1,11 @@
 package gr.aueb.cf.inspirecraft.model;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
 
 @Entity
 @NoArgsConstructor
@@ -15,14 +13,18 @@ import java.util.List;
 @Getter
 @Setter
 @Table(name = "members")
-public class Member extends User{
+public class Member extends AbstractEntity{
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id")
+    private User user;
 
     @OneToOne(mappedBy = "member", cascade = CascadeType.ALL)
     private Favorites favorites;
 
-    @ManyToMany
-    @JoinTable(name = "member_favorites", joinColumns = @JoinColumn(name = "member_id"), inverseJoinColumns =
-        @JoinColumn(name = "product_id"))
-    private List<Product> favoriteProducts;
 
 }
