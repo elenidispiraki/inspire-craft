@@ -1,6 +1,9 @@
 package gr.aueb.cf.inspirecraft.service;
 
+import gr.aueb.cf.inspirecraft.core.exceptions.AppObjectAlreadyExistsException;
+import gr.aueb.cf.inspirecraft.core.exceptions.AppObjectNotFoundException;
 import gr.aueb.cf.inspirecraft.dto.ProductInsertDTO;
+import gr.aueb.cf.inspirecraft.dto.ProductReadOnlyDTO;
 import gr.aueb.cf.inspirecraft.dto.ProductUpdateDTO;
 import gr.aueb.cf.inspirecraft.model.Product;
 
@@ -9,11 +12,11 @@ import java.util.Optional;
 
 public interface IProductService {
 
-    Product saveProduct(ProductInsertDTO productInsertDTO);
-    Product updateProduct(ProductUpdateDTO productUpdateDTO);
-    void deleteProduct(Long id);
-    Optional<Product> getProductById(Long id);
-    List<Product> getProductsByName(String name);
+    ProductReadOnlyDTO saveProduct(ProductInsertDTO productInsertDTO) throws AppObjectAlreadyExistsException;
+    ProductReadOnlyDTO updateProduct(ProductUpdateDTO productUpdateDTO) throws AppObjectNotFoundException;
+    void deleteProduct(Long id) throws AppObjectNotFoundException;
+    Optional<Product> getProductById(Long id) throws AppObjectNotFoundException;
+    List<Product> getProductsByName(String name) throws AppObjectNotFoundException;
     List<Product> getAllProducts();
 
 }

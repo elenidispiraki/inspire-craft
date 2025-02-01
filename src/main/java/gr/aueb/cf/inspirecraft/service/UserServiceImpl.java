@@ -6,7 +6,7 @@ import gr.aueb.cf.inspirecraft.core.exceptions.AppObjectNotFoundException;
 import gr.aueb.cf.inspirecraft.dto.UserInsertDTO;
 import gr.aueb.cf.inspirecraft.dto.UserReadOnlyDTO;
 import gr.aueb.cf.inspirecraft.dto.UserUpdateDTO;
-import gr.aueb.cf.inspirecraft.mapper.Mapper;
+import gr.aueb.cf.inspirecraft.mapper.UserMapper;
 import gr.aueb.cf.inspirecraft.model.User;
 import gr.aueb.cf.inspirecraft.repositories.UserRepository;
 import jakarta.transaction.Transactional;
@@ -21,7 +21,7 @@ public class UserServiceImpl implements IUserService {
 
 
     private final UserRepository userRepository;
-    private final Mapper mapper;
+    private final UserMapper mapper;
 
 
     @Transactional(rollbackOn = Exception.class)

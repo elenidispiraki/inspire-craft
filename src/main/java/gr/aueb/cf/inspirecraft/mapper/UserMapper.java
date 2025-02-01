@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
-public class Mapper {
+public class UserMapper {
 
     public User mapToUserEntity(UserInsertDTO userInsertDTO) {
         User user = new User();
