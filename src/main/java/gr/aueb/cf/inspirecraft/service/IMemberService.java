@@ -6,7 +6,6 @@ import gr.aueb.cf.inspirecraft.core.exceptions.AppObjectNotFoundException;
 import gr.aueb.cf.inspirecraft.dto.MemberInsertDTO;
 import gr.aueb.cf.inspirecraft.dto.MemberReadOnlyDTO;
 import gr.aueb.cf.inspirecraft.dto.MemberUpdateDTO;
-import gr.aueb.cf.inspirecraft.model.Member;
 import gr.aueb.cf.inspirecraft.model.Product;
 
 import java.util.List;
