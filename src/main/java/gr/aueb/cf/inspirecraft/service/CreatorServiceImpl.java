@@ -16,6 +16,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -64,5 +65,15 @@ public class CreatorServiceImpl implements ICreatorService {
     @Override
     public List<Product> getProductsByCreatorId(Long creatorId) {
         return creatorRepository.findById(creatorId).get().getProducts();
+    }
+
+    @Override
+    public List<Creator> getCreators() {
+        return creatorRepository.findAll();
+    }
+
+    @Override
+    public Optional<CreatorReadOnlyDTO> getCreator(Long id) throws AppObjectNotFoundException {
+        return creatorRepository.findById(id).map(creatorMapper::mapToCreatorReadOnlyDTO);
     }
 }
