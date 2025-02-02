@@ -6,6 +6,7 @@ import gr.aueb.cf.inspirecraft.dto.CreatorReadOnlyDTO;
 import gr.aueb.cf.inspirecraft.dto.CreatorUpdateDTO;
 import gr.aueb.cf.inspirecraft.mapper.CreatorMapper;
 import gr.aueb.cf.inspirecraft.model.Creator;
+import gr.aueb.cf.inspirecraft.model.Product;
 import gr.aueb.cf.inspirecraft.repositories.CreatorRepository;
 import gr.aueb.cf.inspirecraft.service.CreatorServiceImpl;
 import jakarta.validation.Valid;
@@ -23,8 +24,6 @@ import java.util.List;
 public class CreatorRestController {
 
     private final CreatorServiceImpl creatorService;
-    private final CreatorRepository creatorRepository;
-    private final CreatorMapper creatorMapper;
 
     @GetMapping("/creators")
     public ResponseEntity<List<Creator>> getCreators(){
@@ -69,10 +68,19 @@ public class CreatorRestController {
         return new ResponseEntity<>(updatedCreator, HttpStatus.OK);
     }
 
-    @DeleteMapping("/creators/delete")
-    public ResponseEntity<Void> deleteCreator(@PathVariable Long id) throws AppObjectNotFoundException{
+    @DeleteMapping("/creators/{id}/delete")
+    public ResponseEntity<Void> deleteCreator(@PathVariable Long id) throws AppObjectNotFoundException  {
         creatorService.deleteCreator(id);
-        return new ResponseEntity<>(HttpStatus.OK);
+        return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/creator/{id}/products")
+    public ResponseEntity<List<Product>> getProducts(@PathVariable Long id) throws AppObjectNotFoundException{
+        List<Product> creatorProducts =  creatorService.getProductsByCreatorId(id);
+        if (creatorProducts.isEmpty()) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(creatorProducts,HttpStatus.OK);
     }
 
 }
