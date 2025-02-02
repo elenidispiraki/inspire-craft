@@ -54,7 +54,7 @@ public class CreatorRestController {
         return new ResponseEntity<>(creatorReadOnlyDTO, HttpStatus.OK);
     }
 
-    @PostMapping("/creators/update")
+    @PutMapping("/creators/update")
     public ResponseEntity<CreatorReadOnlyDTO> updateCreator(
             @Valid @RequestBody CreatorUpdateDTO creatorUpdateDTO,
             BindingResult bindingResult)
