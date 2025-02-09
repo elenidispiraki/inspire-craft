@@ -25,6 +25,9 @@ public class Product extends AbstractEntity{
     @Column(nullable = false)
     private String description;
 
+    @Column(nullable = false)
+    private String imageUrl;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "creator_id")
     private Creator creator;

@@ -22,4 +22,7 @@ public class ProductInsertDTO {
     @NotNull(message = "Creator details must not be null")
     private Creator creator;
 
+    @NotNull(message = "Product image must not be empty.")
+    private String imageUrl;
+
 }

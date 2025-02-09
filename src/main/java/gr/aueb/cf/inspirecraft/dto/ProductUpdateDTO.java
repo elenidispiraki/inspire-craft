@@ -1,5 +1,6 @@
 package gr.aueb.cf.inspirecraft.dto;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,5 +14,6 @@ public class ProductUpdateDTO {
 
     private String name;
     private String description;
+    private String imageUrl;
 
 }

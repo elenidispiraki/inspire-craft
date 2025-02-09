@@ -16,6 +16,7 @@ public class ProductMapper {
         product.setName(productInsertDTO.getName());
         product.setDescription(productInsertDTO.getDescription());
         product.setCreator(productInsertDTO.getCreator());
+        product.setImageUrl(productInsertDTO.getImageUrl());
         return product;
     }
 
@@ -23,6 +24,7 @@ public class ProductMapper {
         Product product = new Product();
         product.setName(productUpdateDTO.getName());
         product.setDescription(productUpdateDTO.getDescription());
+        product.setImageUrl(productUpdateDTO.getImageUrl());
         return product;
     }
 
@@ -31,6 +33,7 @@ public class ProductMapper {
         productReadOnlyDTO.setName(product.getName());
         productReadOnlyDTO.setDescription(product.getDescription());
         productReadOnlyDTO.setCreator(product.getCreator());
+        productReadOnlyDTO.setImageUrl(product.getImageUrl());
         return productReadOnlyDTO;
     }
 
