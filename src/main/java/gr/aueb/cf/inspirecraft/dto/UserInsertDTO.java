@@ -30,7 +30,6 @@ public class UserInsertDTO {
     @NotNull(message = "Lastname must not be empty.")
     private String lastname;
 
-    private LocalDate dateOfBirth;
 
     @NotNull(message = "Role must not be empty.")
     private Role role;

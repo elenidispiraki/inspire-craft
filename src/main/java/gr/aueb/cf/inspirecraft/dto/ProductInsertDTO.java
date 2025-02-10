@@ -1,6 +1,5 @@
 package gr.aueb.cf.inspirecraft.dto;
 
-import gr.aueb.cf.inspirecraft.model.Creator;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

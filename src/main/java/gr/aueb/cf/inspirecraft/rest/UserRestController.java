@@ -22,20 +22,22 @@ public class UserRestController {
     private final UserServiceImpl userService;
     private final UserMapper userMapper;
 
-    @GetMapping("/users")
+    @GetMapping("/users/{id}")
+    public ResponseEntity<UserReadOnlyDTO>  getUserById(@PathVariable Long id)
+            throws AppObjectNotFoundException {
+        User user = userService.getUserById(id)
+                .orElseThrow(()-> new AppObjectNotFoundException("User", "User with id: " + id + " not found"));
+        UserReadOnlyDTO userReadOnlyDTO = userMapper.mapToUserReadOnlyDTO(user);
+        return new ResponseEntity<>(userReadOnlyDTO, HttpStatus.OK);
+    }
+
+    @GetMapping("/users/all")
     public ResponseEntity<List<User>> getUsers(){
         List<User> users = userService.getAllUsers();
         return new ResponseEntity<>(users, HttpStatus.OK);
     }
 
-    @GetMapping("/users/{id}")
-    public ResponseEntity<UserReadOnlyDTO>  getUserById(@PathVariable Long id)
-            throws AppObjectNotFoundException {
-        User user = userService.getUserById(id)
-                        .orElseThrow(()-> new AppObjectNotFoundException("User", "User with id: " + id + " not found"));
-        UserReadOnlyDTO userReadOnlyDTO = userMapper.mapToUserReadOnlyDTO(user);
-        return new ResponseEntity<>(userReadOnlyDTO, HttpStatus.OK);
-    }
+
 
     @GetMapping("/users/username/{username}")
     public ResponseEntity<UserReadOnlyDTO>  getUserByUsername(@PathVariable String username)

@@ -44,6 +44,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             return;
         }
         jwt = authHeader.substring(7);
+        LOGGER.info("Received JWT: {}", jwt); // Προσθήκη Log για έλεγχο του JWT
 
         try{
             username = jwtService.extractSubject(jwt);

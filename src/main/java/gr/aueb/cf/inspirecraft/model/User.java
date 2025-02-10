@@ -35,17 +35,10 @@ public class User extends AbstractEntity implements UserDetails {
     @Column(nullable = false)
     private String lastname;
 
-    private LocalDate dateOfBirth;
-
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private Role role;
 
-    @OneToOne(mappedBy = "user")
-    private Creator creator;
-
-    @OneToOne(mappedBy = "user")
-    private Member member;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

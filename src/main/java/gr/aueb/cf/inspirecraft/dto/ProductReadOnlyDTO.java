@@ -1,14 +1,9 @@
 package gr.aueb.cf.inspirecraft.dto;
 
-import gr.aueb.cf.inspirecraft.model.Creator;
-import gr.aueb.cf.inspirecraft.model.Member;
-import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor

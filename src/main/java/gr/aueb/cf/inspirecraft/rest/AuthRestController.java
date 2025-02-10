@@ -4,6 +4,7 @@ import gr.aueb.cf.inspirecraft.authentication.AuthenticationService;
 import gr.aueb.cf.inspirecraft.core.exceptions.AppObjectNotAuthorizedException;
 import gr.aueb.cf.inspirecraft.dto.AuthenticationRequestDTO;
 import gr.aueb.cf.inspirecraft.dto.AuthenticationResponseDTO;
+import gr.aueb.cf.inspirecraft.dto.RegisterRequestDTO;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,6 +29,13 @@ public class AuthRestController {
         AuthenticationResponseDTO authenticationResponseDTO = authenticationService.authenticate(authenticationRequestDTO);
         LOGGER.info("User Authenticated");
         return new ResponseEntity<>(authenticationResponseDTO, HttpStatus.OK);
+    }
+
+    @PostMapping("/register")
+    public ResponseEntity<AuthenticationResponseDTO> register(@RequestBody RegisterRequestDTO registerRequestDTO) {
+        AuthenticationResponseDTO responseDTO = authenticationService.register(registerRequestDTO);
+        LOGGER.info("New User Registered: {}", registerRequestDTO.getUsername());
+        return new ResponseEntity<>(responseDTO, HttpStatus.CREATED);
     }
 
 

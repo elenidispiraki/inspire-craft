@@ -1,10 +1,13 @@
 package gr.aueb.cf.inspirecraft.security;
 
+import gr.aueb.cf.inspirecraft.authentication.JwtAuthenticationFilter;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 import java.security.Key;
@@ -16,7 +19,8 @@ import java.util.function.Function;
 @Service
 public class JwtService {
 
-    private String secretKey = "e45422b37d6bdffeb76496786e8f8a53450e61a63f374c4ed3f08e4ff76a4c15";
+    private static final Logger LOGGER = LoggerFactory.getLogger(JwtService.class);
+    private String secretKey = "231d68e50056a4822a0b2266349522a56b5ffb66fefe3bc37af3e292105cac57";
     private long jwtExpiration = 10003600;
 
     public String generateToken(String username, String role){
@@ -35,7 +39,11 @@ public class JwtService {
 
     public boolean isTokenValid(String token, UserDetails userDetails) {
         final String subject = extractSubject(token);
-        return (subject.equals(userDetails.getUsername())) && !isTokenExpired(token);
+        boolean isValid = subject.equals(userDetails.getUsername()) && !isTokenExpired(token);
+        if (!isValid) {
+            LOGGER.warn("Invalid token: {}", token);
+        }
+        return isValid;
     }
 
     public String getStringClaim(String token, String claim) {
