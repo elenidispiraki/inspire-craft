@@ -28,12 +28,10 @@ public class UserMapper {
         user.setPassword(userUpdateDTO.getPassword());
         user.setFirstname(userUpdateDTO.getFirstname());
         user.setLastname(userUpdateDTO.getLastname());
-        user.setDateOfBirth(userUpdateDTO.getDateOfBirth());
         user.setRole(userUpdateDTO.getRole());
 
         return user;
     }
-
 
     public UserReadOnlyDTO mapToUserReadOnlyDTO(User user) {
         UserReadOnlyDTO userReadOnlyDTO = new UserReadOnlyDTO();
@@ -41,13 +39,9 @@ public class UserMapper {
         userReadOnlyDTO.setUsername(user.getUsername());
         userReadOnlyDTO.setFirstname(user.getFirstname());
         userReadOnlyDTO.setLastname(user.getLastname());
-        userReadOnlyDTO.setDateOfBirth(user.getDateOfBirth());
         userReadOnlyDTO.setRole(user.getRole());
 
         return userReadOnlyDTO;
     }
-
-
-
 
 }

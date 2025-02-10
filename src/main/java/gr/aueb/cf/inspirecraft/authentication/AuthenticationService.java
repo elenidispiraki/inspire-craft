@@ -46,8 +46,8 @@ public class AuthenticationService {
         user.setFirstname(dto.getFirstname());
         user.setLastname(dto.getLastname());
         user.setUsername(dto.getUsername());
-        user.setPassword(passwordEncoder.encode(dto.getPassword())); // Κρυπτογράφηση κωδικού
-        user.setRole(Role.MEMBER); // Προεπιλεγμένος ρόλος (ή μπορεί να γίνει configurable)
+        user.setPassword(passwordEncoder.encode(dto.getPassword()));
+        user.setRole(Role.CREATOR);
 
 
         System.out.println("User object before save: " + user);

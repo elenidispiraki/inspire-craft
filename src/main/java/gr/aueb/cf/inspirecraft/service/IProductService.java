@@ -16,7 +16,6 @@ public interface IProductService {
     ProductReadOnlyDTO updateProduct(ProductUpdateDTO productUpdateDTO) throws AppObjectNotFoundException;
     void deleteProduct(Long id) throws AppObjectNotFoundException;
     Optional<Product> getProductById(Long id) throws AppObjectNotFoundException;
-    List<Product> getProductsByName(String name) throws AppObjectNotFoundException;
     List<Product> getAllProducts();
 
 }

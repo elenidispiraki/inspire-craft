@@ -37,29 +37,11 @@ public class UserRestController {
         return new ResponseEntity<>(users, HttpStatus.OK);
     }
 
-
-
-    @GetMapping("/users/username/{username}")
-    public ResponseEntity<UserReadOnlyDTO>  getUserByUsername(@PathVariable String username)
-            throws AppObjectNotFoundException {
-        User user = userService.getUserByUsername(username)
-                .orElseThrow(()-> new AppObjectNotFoundException("User", "User with username: " + username + " not " +
-                        "found"));
-        UserReadOnlyDTO userReadOnlyDTO = userMapper.mapToUserReadOnlyDTO(user);
-        return new ResponseEntity<>(userReadOnlyDTO, HttpStatus.OK);
-    }
-
-    @GetMapping("/users/name/{lastname}")
-    public ResponseEntity<List<User>> getUsersByLastname(@PathVariable String lastname) {
-        return ResponseEntity.ok(userService.getUsersByLastname(lastname));
-    }
-
     @PostMapping("/users/save")
     public ResponseEntity<UserReadOnlyDTO> saveUser(@Valid @RequestBody UserInsertDTO userInsertDTO,
                                                     BindingResult bindingResult)
             throws AppObjectInvalidArgumentException,
             AppValidationException,
-            AppServerException,
             AppObjectAlreadyExistsException {
 
         if(bindingResult.hasErrors()) {

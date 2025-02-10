@@ -13,6 +13,5 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
    Optional<User> findByUsername(String username);
    List<User> findByFirstname(String firstname);
    List<User> findByLastname(String lastname);
-   List<User> findByFirstnameAndLastname(String firstname, String lastname);
-   List<User> findByRole(Role role);
+
 }

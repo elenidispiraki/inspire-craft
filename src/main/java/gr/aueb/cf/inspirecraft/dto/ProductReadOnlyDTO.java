@@ -12,7 +12,5 @@ import lombok.Setter;
 public class ProductReadOnlyDTO {
     private String name;
     private String description;
-    private Creator creator;
     private String imageUrl;
-    //private List<Member> membersLiked;
 }

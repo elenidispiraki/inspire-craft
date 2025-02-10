@@ -28,7 +28,4 @@ public class Product extends AbstractEntity{
     @Column(nullable = false)
     private String imageUrl;
 
-
-
-
 }

@@ -16,6 +16,5 @@ public class UserReadOnlyDTO {
     private String username;
     private String firstname;
     private String lastname;
-    private LocalDate dateOfBirth;
     private Role role;
 }

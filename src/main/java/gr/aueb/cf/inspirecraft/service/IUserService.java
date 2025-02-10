@@ -16,9 +16,7 @@ public interface IUserService {
     UserReadOnlyDTO updateUser(UserUpdateDTO userUpdateDTO)
             throws AppObjectInvalidArgumentException, AppObjectNotFoundException;
     void deleteUser(Long id) throws AppObjectNotFoundException;
-    Optional<User> getUserByUsername(String username);
     Optional<User> getUserById(Long id);
-    List<User> getUsersByLastname(String lastname);
     List<User> getAllUsers();
 
 }

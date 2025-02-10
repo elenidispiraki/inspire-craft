@@ -61,18 +61,8 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public Optional<User> getUserByUsername(String username) {
-        return userRepository.findByUsername(username);
-    }
-
-    @Override
     public Optional<User> getUserById(Long id) {
         return userRepository.findById(id);
-    }
-
-    @Override
-    public List<User> getUsersByLastname(String lastname) {
-        return userRepository.findByLastname(lastname);
     }
 
     @Override

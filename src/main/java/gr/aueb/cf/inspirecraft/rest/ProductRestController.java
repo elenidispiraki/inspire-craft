@@ -39,11 +39,6 @@ public class ProductRestController {
         return ResponseEntity.ok(productService.getAllProducts());
     }
 
-    @GetMapping("/products/name/{name}")
-    public ResponseEntity<List<Product>> getProductsByName(@PathVariable String name) {
-        return ResponseEntity.ok(productService.getProductsByName(name));
-    }
-
     @PostMapping("/products/save")
     public ResponseEntity<ProductReadOnlyDTO> createProduct(
             @Valid @RequestBody ProductInsertDTO productInsertDTO,

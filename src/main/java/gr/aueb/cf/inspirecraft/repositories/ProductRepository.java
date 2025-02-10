@@ -8,5 +8,5 @@ import java.util.List;
 
 public interface ProductRepository extends JpaRepository<Product, Long>, JpaSpecificationExecutor<Product> {
         List<Product> findByName(String name);
-        List<Product> findByCreator(Creator creator);
+
 }
