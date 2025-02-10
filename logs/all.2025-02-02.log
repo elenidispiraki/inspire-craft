@@ -1,0 +1,270 @@
+2025-02-02 20:04:41 INFO  - HV000001: Hibernate Validator 8.0.2.Final
+2025-02-02 20:04:41 INFO  - Starting InspireCraftApplication using Java 17.0.12 with PID 19708 (C:\Users\Eleni\IdeaProjects\inspire-craft\build\classes\java\main started by Eleni in C:\Users\Eleni\IdeaProjects\inspire-craft)
+2025-02-02 20:04:41 INFO  - The following 1 profile is active: "test"
+2025-02-02 20:04:43 INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-02 20:04:43 INFO  - Finished Spring Data repository scanning in 130 ms. Found 5 JPA repository interfaces.
+2025-02-02 20:04:44 INFO  - Tomcat initialized with port 8080 (http)
+2025-02-02 20:04:44 INFO  - Root WebApplicationContext: initialization completed in 3064 ms
+2025-02-02 20:04:45 INFO  - HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-02 20:04:45 INFO  - HHH000026: Second-level cache disabled
+2025-02-02 20:04:45 INFO  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-02 20:04:46 INFO  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.38
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-02 20:04:48 INFO  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-02 20:04:49 INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-02 20:04:49 INFO  - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-02 20:04:49 WARN  - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-02 20:04:50 WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-02 20:04:51 INFO  - Tomcat started on port 8080 (http) with context path '/'
+2025-02-02 20:04:51 INFO  - Started InspireCraftApplication in 10.944 seconds (process running for 11.732)
+2025-02-02 20:44:47 INFO  - Initializing Servlet 'dispatcherServlet'
+2025-02-02 20:44:47 INFO  - Completed initialization in 3 ms
+2025-02-02 21:15:41 INFO  - HV000001: Hibernate Validator 8.0.2.Final
+2025-02-02 21:15:41 INFO  - Starting InspireCraftApplication using Java 17.0.12 with PID 13384 (C:\Users\Eleni\IdeaProjects\inspire-craft\build\classes\java\main started by Eleni in C:\Users\Eleni\IdeaProjects\inspire-craft)
+2025-02-02 21:15:41 INFO  - The following 1 profile is active: "test"
+2025-02-02 21:15:43 INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-02 21:15:43 INFO  - Finished Spring Data repository scanning in 134 ms. Found 5 JPA repository interfaces.
+2025-02-02 21:15:44 INFO  - Tomcat initialized with port 8080 (http)
+2025-02-02 21:15:44 INFO  - Root WebApplicationContext: initialization completed in 2939 ms
+2025-02-02 21:15:45 INFO  - HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-02 21:15:45 INFO  - HHH000026: Second-level cache disabled
+2025-02-02 21:15:46 INFO  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-02 21:15:46 INFO  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.38
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-02 21:15:49 INFO  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-02 21:15:49 INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-02 21:15:50 INFO  - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-02 21:15:50 WARN  - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-02 21:15:50 WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-02 21:15:51 INFO  - Tomcat started on port 8080 (http) with context path '/'
+2025-02-02 21:15:51 INFO  - Started InspireCraftApplication in 11.569 seconds (process running for 12.396)
+2025-02-02 21:15:59 INFO  - Initializing Servlet 'dispatcherServlet'
+2025-02-02 21:15:59 INFO  - Completed initialization in 2 ms
+2025-02-02 21:19:03 INFO  - HV000001: Hibernate Validator 8.0.2.Final
+2025-02-02 21:19:03 INFO  - Starting InspireCraftApplication using Java 17.0.12 with PID 9172 (C:\Users\Eleni\IdeaProjects\inspire-craft\build\classes\java\main started by Eleni in C:\Users\Eleni\IdeaProjects\inspire-craft)
+2025-02-02 21:19:03 INFO  - The following 1 profile is active: "test"
+2025-02-02 21:19:07 INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-02 21:19:08 INFO  - Finished Spring Data repository scanning in 346 ms. Found 5 JPA repository interfaces.
+2025-02-02 21:19:10 INFO  - Tomcat initialized with port 8080 (http)
+2025-02-02 21:19:10 INFO  - Root WebApplicationContext: initialization completed in 6432 ms
+2025-02-02 21:19:10 INFO  - HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-02 21:19:11 INFO  - HHH000026: Second-level cache disabled
+2025-02-02 21:19:11 INFO  - HV000001: Hibernate Validator 8.0.2.Final
+2025-02-02 21:19:11 INFO  - Starting InspireCraftApplication using Java 17.0.12 with PID 13804 (C:\Users\Eleni\IdeaProjects\inspire-craft\build\classes\java\main started by Eleni in C:\Users\Eleni\IdeaProjects\inspire-craft)
+2025-02-02 21:19:11 INFO  - The following 1 profile is active: "test"
+2025-02-02 21:19:12 INFO  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-02 21:19:13 INFO  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.38
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-02 21:19:14 INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-02 21:19:14 INFO  - Finished Spring Data repository scanning in 180 ms. Found 5 JPA repository interfaces.
+2025-02-02 21:19:15 INFO  - Tomcat initialized with port 8080 (http)
+2025-02-02 21:19:16 INFO  - Root WebApplicationContext: initialization completed in 4510 ms
+2025-02-02 21:19:16 INFO  - HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-02 21:19:16 INFO  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-02 21:19:16 INFO  - HHH000026: Second-level cache disabled
+2025-02-02 21:19:16 INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-02 21:19:17 INFO  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-02 21:19:17 INFO  - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-02 21:19:17 WARN  - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-02 21:19:18 WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-02 21:19:18 INFO  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.38
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-02 21:19:19 WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-02-02 21:19:19 INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-02 21:19:19 ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-02-02 21:19:22 INFO  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-02 21:19:22 INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-02 21:19:23 INFO  - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-02 21:19:23 WARN  - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-02 21:19:23 WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-02 21:19:25 WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-02-02 21:19:25 INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-02 21:19:25 ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-02-02 21:20:18 INFO  - HV000001: Hibernate Validator 8.0.2.Final
+2025-02-02 21:20:18 INFO  - Starting InspireCraftApplication using Java 17.0.12 with PID 18424 (C:\Users\Eleni\IdeaProjects\inspire-craft\build\classes\java\main started by Eleni in C:\Users\Eleni\IdeaProjects\inspire-craft)
+2025-02-02 21:20:18 INFO  - The following 1 profile is active: "test"
+2025-02-02 21:20:20 INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-02 21:20:20 INFO  - Finished Spring Data repository scanning in 154 ms. Found 5 JPA repository interfaces.
+2025-02-02 21:20:21 INFO  - Tomcat initialized with port 8080 (http)
+2025-02-02 21:20:21 INFO  - Root WebApplicationContext: initialization completed in 2807 ms
+2025-02-02 21:20:21 INFO  - HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-02 21:20:21 INFO  - HHH000026: Second-level cache disabled
+2025-02-02 21:20:22 INFO  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-02 21:20:23 INFO  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.38
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-02 21:20:25 INFO  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-02 21:20:25 INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-02 21:20:25 INFO  - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-02 21:20:25 WARN  - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-02 21:20:26 WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-02 21:20:27 INFO  - Tomcat started on port 8080 (http) with context path '/'
+2025-02-02 21:20:27 INFO  - Started InspireCraftApplication in 9.906 seconds (process running for 11.164)
+2025-02-02 21:20:43 INFO  - Initializing Servlet 'dispatcherServlet'
+2025-02-02 21:20:43 INFO  - Completed initialization in 2 ms
+2025-02-02 21:21:17 INFO  - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-02 21:21:17 INFO  - Graceful shutdown complete
+2025-02-02 21:21:17 INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-02 21:25:10 INFO  - HV000001: Hibernate Validator 8.0.2.Final
+2025-02-02 21:25:10 INFO  - Starting InspireCraftApplication using Java 17.0.12 with PID 23344 (C:\Users\Eleni\IdeaProjects\inspire-craft\build\classes\java\main started by Eleni in C:\Users\Eleni\IdeaProjects\inspire-craft)
+2025-02-02 21:25:10 INFO  - The following 1 profile is active: "test"
+2025-02-02 21:25:12 INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-02 21:25:12 INFO  - Finished Spring Data repository scanning in 125 ms. Found 5 JPA repository interfaces.
+2025-02-02 21:25:13 INFO  - Tomcat initialized with port 8080 (http)
+2025-02-02 21:25:13 INFO  - Root WebApplicationContext: initialization completed in 2913 ms
+2025-02-02 21:25:13 INFO  - HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-02 21:25:14 INFO  - HHH000026: Second-level cache disabled
+2025-02-02 21:25:14 INFO  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-02 21:25:15 INFO  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.38
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-02 21:25:17 INFO  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-02 21:25:17 INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-02 21:25:18 INFO  - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-02 21:25:18 WARN  - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-02 21:25:19 WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-02 21:25:20 INFO  - Tomcat started on port 8080 (http) with context path '/'
+2025-02-02 21:25:20 INFO  - Started InspireCraftApplication in 10.721 seconds (process running for 11.715)
+2025-02-02 21:25:27 INFO  - Initializing Servlet 'dispatcherServlet'
+2025-02-02 21:25:27 INFO  - Completed initialization in 2 ms
+2025-02-02 21:27:46 INFO  - HV000001: Hibernate Validator 8.0.2.Final
+2025-02-02 21:27:46 INFO  - Starting InspireCraftApplication using Java 17.0.12 with PID 812 (C:\Users\Eleni\IdeaProjects\inspire-craft\build\classes\java\main started by Eleni in C:\Users\Eleni\IdeaProjects\inspire-craft)
+2025-02-02 21:27:46 INFO  - The following 1 profile is active: "test"
+2025-02-02 21:27:48 INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-02 21:27:48 INFO  - Finished Spring Data repository scanning in 127 ms. Found 5 JPA repository interfaces.
+2025-02-02 21:27:49 INFO  - Tomcat initialized with port 8080 (http)
+2025-02-02 21:27:49 INFO  - Root WebApplicationContext: initialization completed in 2770 ms
+2025-02-02 21:27:49 INFO  - HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-02 21:27:49 INFO  - HHH000026: Second-level cache disabled
+2025-02-02 21:27:50 INFO  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-02 21:27:51 INFO  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.38
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-02 21:27:53 INFO  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-02 21:27:53 INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-02 21:27:54 INFO  - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-02 21:27:54 WARN  - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-02 21:27:54 WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-02 21:27:55 INFO  - Tomcat started on port 8080 (http) with context path '/'
+2025-02-02 21:27:55 INFO  - Started InspireCraftApplication in 10.253 seconds (process running for 11.033)
+2025-02-02 21:27:56 INFO  - Initializing Servlet 'dispatcherServlet'
+2025-02-02 21:27:56 INFO  - Completed initialization in 2 ms
+2025-02-02 21:55:35 INFO  - HV000001: Hibernate Validator 8.0.2.Final
+2025-02-02 21:55:35 INFO  - Starting InspireCraftApplication using Java 17.0.12 with PID 21052 (C:\Users\Eleni\IdeaProjects\inspire-craft\build\classes\java\main started by Eleni in C:\Users\Eleni\IdeaProjects\inspire-craft)
+2025-02-02 21:55:35 INFO  - The following 1 profile is active: "test"
+2025-02-02 21:55:37 INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-02 21:55:37 INFO  - Finished Spring Data repository scanning in 124 ms. Found 5 JPA repository interfaces.
+2025-02-02 21:55:38 INFO  - Tomcat initialized with port 8080 (http)
+2025-02-02 21:55:38 INFO  - Root WebApplicationContext: initialization completed in 2805 ms
+2025-02-02 21:55:38 INFO  - HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-02 21:55:38 INFO  - HHH000026: Second-level cache disabled
+2025-02-02 21:55:39 INFO  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-02 21:55:39 INFO  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.38
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-02 21:55:41 INFO  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-02 21:55:42 INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-02 21:55:42 INFO  - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-02 21:55:42 WARN  - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-02 21:55:43 WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-02 21:55:44 INFO  - Tomcat started on port 8080 (http) with context path '/'
+2025-02-02 21:55:44 INFO  - Started InspireCraftApplication in 9.715 seconds (process running for 10.346)
+2025-02-02 21:57:54 INFO  - Initializing Servlet 'dispatcherServlet'
+2025-02-02 21:57:54 INFO  - Completed initialization in 2 ms
+2025-02-02 22:11:45 INFO  - HV000001: Hibernate Validator 8.0.2.Final
+2025-02-02 22:11:46 INFO  - Starting InspireCraftApplication using Java 17.0.12 with PID 2636 (C:\Users\Eleni\IdeaProjects\inspire-craft\build\classes\java\main started by Eleni in C:\Users\Eleni\IdeaProjects\inspire-craft)
+2025-02-02 22:11:46 INFO  - The following 1 profile is active: "test"
+2025-02-02 22:11:48 INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-02 22:11:48 INFO  - Finished Spring Data repository scanning in 130 ms. Found 5 JPA repository interfaces.
+2025-02-02 22:11:49 INFO  - Tomcat initialized with port 8080 (http)
+2025-02-02 22:11:49 INFO  - Root WebApplicationContext: initialization completed in 3590 ms
+2025-02-02 22:11:50 INFO  - HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-02 22:11:50 INFO  - HHH000026: Second-level cache disabled
+2025-02-02 22:11:50 INFO  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-02 22:11:51 INFO  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.38
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-02 22:11:53 INFO  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-02 22:11:54 INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-02 22:11:54 INFO  - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-02 22:11:54 WARN  - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-02 22:11:55 WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-02 22:11:56 INFO  - Tomcat started on port 8080 (http) with context path '/'
+2025-02-02 22:11:56 INFO  - Started InspireCraftApplication in 11.433 seconds (process running for 12.178)
+2025-02-02 22:17:35 INFO  - Initializing Servlet 'dispatcherServlet'
+2025-02-02 22:17:35 INFO  - Completed initialization in 3 ms

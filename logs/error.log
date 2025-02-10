@@ -1,0 +1,8 @@
+2025-02-10 09:25:09 ERROR - Column 'created_at' cannot be null
+2025-02-10 09:26:43 ERROR - Column 'created_at' cannot be null
+2025-02-10 09:26:45 ERROR - Column 'created_at' cannot be null
+2025-02-10 09:30:32 ERROR - Column 'created_at' cannot be null
+2025-02-10 09:34:19 ERROR - Column 'created_at' cannot be null
+2025-02-10 16:00:15 ERROR - Duplicate entry 'test@gmail.com' for key 'users.UKlgkd7iin2rkv9xkrkvdf6do2v'
+2025-02-10 16:00:17 ERROR - Duplicate entry 'test@gmail.com' for key 'users.UKlgkd7iin2rkv9xkrkvdf6do2v'
+2025-02-10 16:05:34 ERROR - Duplicate entry 'elenidis@gmail.com' for key 'users.UKlgkd7iin2rkv9xkrkvdf6do2v'
