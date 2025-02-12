@@ -1,0 +1,11 @@
+<p>User Settings work!</p>
+<div class="settings-container">
+  <h2>Ρυθμίσεις Χρήστη</h2>
+  <label>Όνομα:</label>
+  <input [(ngModel)]="user.firstname" type="text" />
+
+  <label>Επώνυμο:</label>
+  <input [(ngModel)]="user.lastname" type="text" />
+
+  <button (click)="updateUser()">Αποθήκευση</button>
+</div>

@@ -1,0 +1,16 @@
+<div class="creator-profile">
+  <h1>{{ creator.user.firstname }} {{ creator.user.lastname }}</h1>
+  <p><strong>Username:</strong> {{ creator.user.username }}</p>
+  <p><strong>Products:</strong></p>
+
+  @if (products.length > 0) {
+  <div class="product-card">
+    @for (product of creator.products; track product ) {
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.description }}</p>
+    }
+  </div>
+  }@else {
+  <p>No products available.</p>
+  }
+</div>

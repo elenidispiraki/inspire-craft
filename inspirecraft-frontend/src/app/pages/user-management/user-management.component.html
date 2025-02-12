@@ -1,0 +1,31 @@
+<div class="user-management-container">
+  <h2>Διαχείριση Χρηστών</h2>
+
+  <!-- <button (click)="addUser()">Προσθήκη Χρήστη</button> -->
+
+  <table>
+    <thead>
+      <tr>
+        <th>Όνομα</th>
+        <th>Επώνυμο</th>
+        <th>Ρόλος</th>
+        <th>Ενέργειες</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      @for (user of users; track user){
+      <tr>
+        <td>{{ user.firstname }}</td>
+        <td>{{ user.lastname }}</td>
+        <td>{{ user.role }}</td>
+        <button (click)="deleteUser(user.id)">Διαγραφή</button>
+        <!-- <td>
+          <button (click)="updateUser(user)">Ενημέρωση</button>
+          <button (click)="deleteUser(user.id)">Διαγραφή</button>
+        </td> -->
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,63 @@
+<section class="products">
+  <h1>Τα προϊόντα μας</h1>
+  <button (click)="toggleForm()" class="btn">Προσθήκη Προϊόντος</button>
+
+  <!-- Φόρμα Προσθήκης Προϊόντος -->
+
+  @if (showForm) {
+  <div class="product-form">
+    <h2>Προσθήκη Νέου Προϊόντος</h2>
+    <label>Όνομα:</label>
+    <input
+      type="text"
+      [(ngModel)]="newProduct.name"
+      placeholder="Όνομα Προϊόντος"
+    />
+
+    <label>Περιγραφή:</label>
+    <input
+      type="text"
+      [(ngModel)]="newProduct.description"
+      placeholder="Περιγραφή"
+    />
+
+    <label>Εικόνα (URL):</label>
+    <input
+      type="text"
+      [(ngModel)]="newProduct.imageUrl"
+      placeholder="Εικόνα URL"
+      value="public/embroidered-pendant.jpg"
+    />
+
+    <label>Creator ID:</label>
+    <input
+      type="number"
+      [(ngModel)]="newProduct.creatorId"
+      placeholder="ID Δημιουργού"
+    />
+    <button (click)="addProduct()" class="btn-save">Αποθήκευση</button>
+    <button (click)="toggleForm()" class="btn-cancel">Ακύρωση</button>
+  </div>
+  }
+
+  <div class="product-list">
+    <div class="product-card">
+      @for (product of products; track product) {
+      <div>
+        <img [src]="product.imageUrl" alt="alt text" />
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <span class="price">{{ product.creator }}</span>
+
+        <button (click)="updateProduct(product.id)" class="btn">
+          Ενημέρωση
+        </button>
+        <button (click)="deleteProduct(product.id)" class="btn">
+          Διαγραφή
+        </button>
+      </div>
+
+      }
+    </div>
+  </div>
+</section>

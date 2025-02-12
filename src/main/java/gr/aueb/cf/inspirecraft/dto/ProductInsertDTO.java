@@ -18,7 +18,6 @@ public class ProductInsertDTO {
     @NotNull(message = "Product description must not be empty.")
     private String description;
 
-    @NotNull(message = "Product image must not be empty.")
     private String imageUrl;
 
 }

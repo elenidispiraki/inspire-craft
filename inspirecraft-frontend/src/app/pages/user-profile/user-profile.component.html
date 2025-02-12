@@ -1,0 +1,15 @@
+@if (user) {
+<div class="profile-container">
+  <h2>{{ user.firstname }} {{ user.lastname }}</h2>
+  <p>Firstname: {{ user.firstname }}</p>
+  <p>Username: {{ user.username }}</p>
+  <p>Role: {{ user.role }}</p>
+  <button (click)="logout()">Log Out</button>
+  <a routerLink="/settings">User Settings</a>
+</div>
+}
+
+<!-- Αν δεν υπάρχει χρήστης, εμφάνιση μηνύματος -->
+@if(!user){
+<p>Δεν είστε συνδεδεμένοι ή δεν βρέθηκαν δεδομένα χρήστη.</p>
+}
